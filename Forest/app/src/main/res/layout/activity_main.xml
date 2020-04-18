@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#228B22"
+            android:textSize="32sp"
+            android:text="Make a Forest"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtHowManyTrees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="How many trees would you like to plant? "/>
+
+            <EditText
+                android:id="@+id/edHowManyTrees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSelectTrees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="Select the Trees"/>
+
+        <CheckBox
+            android:id="@+id/cbSummerOak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/summer_oak" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/rgSummerOak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_above="@+id/view_below" >
+
+                <RadioButton
+                    android:id="@+id/rbRedSummerOak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Red" />
+
+                <RadioButton
+                    android:id="@+id/rbGreenSummerOak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Green" />
+
+                <RadioButton
+                    android:id="@+id/rbBlueSummerOak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue" />
+
+                <RadioButton
+                    android:id="@+id/rbBlackSummerOak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Black" />
+            </RadioGroup>
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/cbAutumOak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autumn_oak" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/rgAutumnOak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_above="@+id/view_below" >
+
+                <RadioButton
+                    android:id="@+id/rbRedAutumnOak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Red" />
+
+                <RadioButton
+                    android:id="@+id/rbGreenAutumnOak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Green" />
+
+                <RadioButton
+                    android:id="@+id/rbBlueAutumnOak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue" />
+
+                <RadioButton
+                    android:id="@+id/rbBlackAutumnOak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Black" />
+            </RadioGroup>
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/cbRedMaple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/red_maple" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/rgRedMaple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_above="@+id/view_below" >
+
+                <RadioButton
+                    android:id="@+id/rbRedRedMaple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Red" />
+
+                <RadioButton
+                    android:id="@+id/rbGreenRedMaple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Green" />
+
+                <RadioButton
+                    android:id="@+id/rbBlueRedMaple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue" />
+
+                <RadioButton
+                    android:id="@+id/rbBlackRedMaple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Black" />
+            </RadioGroup>
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/cbElm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elm" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/rgElm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_above="@+id/view_below" >
+
+                <RadioButton
+                    android:id="@+id/rbRedElm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Red" />
+
+                <RadioButton
+                    android:id="@+id/rbGreenElm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Green" />
+
+                <RadioButton
+                    android:id="@+id/rbBlueElm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue" />
+
+                <RadioButton
+                    android:id="@+id/rbBlackElm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Black" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnMakeForest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Make a Forest" />
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Reset" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
